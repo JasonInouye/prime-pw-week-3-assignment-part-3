@@ -86,9 +86,10 @@ console.log('9. Filling boxes with a "while" loop');
 
 let boxcount = 0;
 let partscount = 7;
+const partsMax = 572;
 let mystock = 572;
 let boxmax = 7;
-const partsMax = 572;
+
 
 while ( partscount < partsMax ){
   partscount+=7;
