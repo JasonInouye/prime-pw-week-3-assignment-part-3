@@ -91,4 +91,8 @@ const boxMax = 1;
 while ( parts >= boxMax ) {
     console.log( `in while loop. parts:`, parts );
     parts--;
+    if ( parts===1, partsMax-- ) {
+      console.log( 'This worked' );
+      console.log( partsMax );
+    }
 }
