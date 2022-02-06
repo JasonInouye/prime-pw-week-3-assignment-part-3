@@ -84,15 +84,40 @@ console.log(`8. Total supplies availabe is :`, sum);
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
 
-let partsMax = 572;
-let parts = 7;
-const boxMax = 1;
+let boxcount = 0;
+let partscount = 7;
+let mystock = 572;
+let boxmax = 7;
+const partsMax = 572;
 
-while ( parts >= boxMax ) {
-    console.log( `in while loop. parts:`, parts );
-    parts--;
-    if ( parts===1, partsMax-- ) {
-      console.log( 'This worked' );
-      console.log( partsMax );
-    }
+while ( partscount < partsMax ){
+  partscount+=7;
+  boxcount++;
+  mystock-=7;
+  console.log( `The while loop count of boxes:`, boxcount);
+  console.log( `The while loop count of my stock:`, mystock);
+  if ( mystock < boxmax ) {
+    console.log( `The Final box count equals:`, boxcount);
+    console.log( `My remainingy stock equals:`, mystock);
+  }
 }
+
+/*
+while ( partscount < partsMax ) {
+    if ( partscount < 572 ) {
+    console.log( `in while loop. parts:`, partscount );
+    console.log( `in while loop. box:`, boxcount );
+    }
+    partscount+=7;
+    boxcount+=1;
+    console.log( `The box count is:`, boxcount );
+}
+
+    parts+=7;
+    if ( parts===1, partsMax-- ) {
+      console.log( 'This worked yo yo' );
+      console.log( partsMax );
+      boxcount += 7;
+      console.log( `the box count is:`,boxcount );
+    }
+*/
